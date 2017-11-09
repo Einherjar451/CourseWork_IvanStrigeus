@@ -20,7 +20,7 @@ namespace CourseWork_IvanStrigeus
             label5.Text = Form1.idCard;
             label6.Text = Form1.name;
             label7.Text = Form1.email;
-            label8.Text = Form1.balance;
+            label8.Text = Form1.balance + "$";
         }
 
         private void button1_Click(object sender, EventArgs e) {

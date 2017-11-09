@@ -44,15 +44,13 @@ namespace CourseWork_IvanStrigeus {
                         name = record["name"].ToString();
                         balance = record["balance"].ToString();
 
-                        label3.Text = balance;
+                        label3.Text = balance + "$";
                         label3.Visible = true;
                     }
                     else {
                         MessageBox.Show("Your card id is not register!"); 
                     }
                 }
-
-
             } catch(SQLiteException) {
                 MessageBox.Show("Error To Input!");
             }

@@ -47,13 +47,13 @@ namespace CourseWork_IvanStrigeus {
                 connect.Close();
 
                 Form2.ActiveForm.Close();
-            }// catch(SQLiteException) {
-            //    MessageBox.Show("Non Correct Input!");
+            } catch(SQLiteException) {
+                MessageBox.Show("Non Correct Input!");
                 
-            //    textBox1.Clear();
-            //    textBox2.Clear();
-            //    textBox3.Clear();
-            //}
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+            }
             catch(System.FormatException) {
                 MessageBox.Show("Not Correct Input!");
                 
